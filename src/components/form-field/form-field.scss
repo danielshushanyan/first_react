@@ -1,0 +1,32 @@
+.form-field {
+  display: flex;
+  width: 100%;
+
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+
+  &__lable {
+    padding: 0 15px 0 0;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 50px;
+  }
+
+  &__input {
+    margin: 0 0 16px;
+    padding: 0 15px 1px;
+    font-family: 'Courier New', sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    color: inherit;
+    background: transparent;
+    border: none;
+    border-bottom: 4px solid transparent;
+    border-image: url("../../assets/images/border.png") 4 stretch;
+    flex: 1;
+    width: 100%;
+    position: relative;
+  }
+}

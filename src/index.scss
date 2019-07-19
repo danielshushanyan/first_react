@@ -1,0 +1,14 @@
+@import "./assets/scss/vars";
+@import '../node_modules/reset-css/sass/reset';
+@import "./assets/scss/fonts";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  color: $text_color;
+  background: $body_color;
+}
+

@@ -1,0 +1,47 @@
+@import "../../assets/scss/vars";
+@import "../../assets/scss/mixins";
+
+.radio-btn-field {
+  position: relative;
+  padding: 0 0 0 32px;
+  user-select: none;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 33px;
+  display: block;
+  cursor: pointer;
+  color: $text_color_black;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &__input {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+
+    &:checked ~ .radio-btn-field__checkmark:after {
+      opacity: 1;
+    }
+  }
+
+  &__checkmark {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    background: url(./../../assets/images/sprites/input.png) 0 0;
+    @include size(28px, 26px);
+
+    &:after {
+      background: url(./../../assets/images/sprites/input.png) -36px -48px;
+      @include square(12px);
+      content: '';
+      opacity: 0;
+      transition: opacity 150ms ease-in-out;
+      position: absolute;
+      top: 7px;
+      left: 8px;
+    }
+  }
+}

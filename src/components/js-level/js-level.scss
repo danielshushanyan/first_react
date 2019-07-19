@@ -1,0 +1,107 @@
+@import "../../assets/scss/mixins";
+@import "../../assets/scss/vars";
+
+.js-level {
+  &__title {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 50px;
+    margin: 0 0 31px;
+  }
+
+  &__wrapper {
+    position: relative;
+    border-top: 4px solid transparent;
+    border-image: url("../../assets/images/border.png") 4 stretch;
+
+    &:after,&:before {
+      content: '';
+      position: absolute;
+      top: -3px;
+      background: $border_color;
+      @include size(2px, 26px);
+    }
+
+    &:after {
+      right: 0;
+    }
+
+    &:before {
+      left: 0;
+    }
+  }
+
+  &__slider {
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 100%;
+    -webkit-appearance: none;
+    height: 1px;
+    background: transparent;
+    outline: none;
+    transition: opacity 0.2s;
+
+    &::-webkit-slider-thumb {
+      appearance: none;
+      cursor: pointer;
+      background: url("../../assets/images/sprites/input.png") -36px -26px;
+      width:17px;
+      height:14px;
+    }
+
+    &::-moz-range-thumb {
+      cursor: pointer;
+      background: url("../../assets/images/sprites/input.png") -36px -26px;
+      width:17px;
+      height:14px;
+    }
+  }
+
+  &__option {
+    position: relative;
+    float: left;
+    width: 25%;
+    margin-top: 25px;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 18px;
+
+    &:nth-child(2) {
+      width: 19%;
+    }
+
+    &:nth-child(3) {
+      width: 29%;
+    }
+
+    &:nth-child(4) {
+      width: 32%;
+    }
+
+    &:nth-child(5) {
+      width: 20%;
+    }
+
+    &_text-right {
+      text-align: right;
+    }
+
+    &_text-overflow {
+      padding: 0 40px 0 0;
+    }
+
+    &_midle:before {
+      @include size(2px, 13px);
+      content: '';
+      position: absolute;
+      top: -26px;
+      left: -2px;
+      background: $border_color;
+    }
+  }
+
+  &__clearfix {
+    @include clearfix
+  }
+}

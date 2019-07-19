@@ -1,0 +1,13 @@
+.page {
+  &__wrapper {
+    margin: 0 auto;
+    padding: 63px 115px 59px;
+    max-width: 1000px;
+    background: url("./assets/images/bg.png") center repeat;
+    background-size: 100% 140px;
+  }
+
+  &__header {
+    margin: 0 0 60px;
+  }
+}

@@ -1,0 +1,13 @@
+@import "../../assets/scss/mixins";
+
+.about-me {
+  &__textarea {
+    @include size(100%, 300px);
+    font-family: 'Courier New', sans-serif;
+    font-size :30px;
+    line-height: 58px;
+    padding: 7px 0 0;
+    background: transparent url('../../assets/images/textarea-bg.png') repeat;
+    border: none;
+  }
+}

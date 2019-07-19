@@ -1,0 +1,53 @@
+@import "../../assets/scss/vars";
+
+.check-box-field {
+  position: relative;
+  padding: 0 0 0 27px;
+  user-select: none;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 25px;
+  display: block;
+  cursor: pointer;
+  color: $text_color_black;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &__input {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+
+    &:checked ~ .check-box-field__checkmark:after {
+      opacity: 1;
+    }
+  }
+
+  &__link {
+    text-decoration: underline;
+    color: $link_color;
+  }
+
+  &__checkmark {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    background: url(./../../assets/images/sprites/input.png) -36px 0;
+    width:18px;
+    height:18px;
+
+    &:after {
+      background: url(./../../assets/images/sprites/input.png) 0 -34px;
+      width:21px;
+      height:27px;
+      content: '';
+      opacity: 0;
+      transition: opacity 150ms ease-in-out;
+      position: absolute;
+      top: -10px;
+      left: 2px;
+    }
+  }
+}

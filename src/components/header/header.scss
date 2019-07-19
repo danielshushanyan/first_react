@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  &__logo {
+    width: 154px;
+    height: 52px;
+    margin-right: calc(50% - 154px);
+    background: url(./../../assets/images/sprites/icons.png) -260px 0;
+  }
+
+  &__stamp {
+    position: relative;
+    top: -14px;
+    right: -61px;
+    background: url(./../../assets/images/sprites/icons.png) 0 0;
+    width: 252px;
+    height: 106px;
+    margin-left: calc(50% - 252px);
+  }
+
+  &__title-img {
+    background: url(./../../assets/images/sprites/icons.png) 0 -114px;
+    width: 221px;
+    height: 118px;
+    margin: -15px 0 0 -35px;
+  }
+}

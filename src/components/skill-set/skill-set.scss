@@ -1,0 +1,22 @@
+.skill-set {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__col {
+    flex: 0 0 33%;
+
+    &_middle {
+      padding-left: 4px;
+    }
+
+    &_last {
+      padding-left: 17px;
+    }
+  }
+
+  &__check-box-field{
+    &:not(:last-child) {
+      margin: 0 0 10px;
+    }
+  }
+}

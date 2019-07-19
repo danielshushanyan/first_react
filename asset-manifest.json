@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1946669b.chunk.css",
+    "main.js": "/static/js/main.2dbee979.chunk.js",
+    "main.js.map": "/static/js/main.2dbee979.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.d6a534e5.chunk.js": "/static/js/2.d6a534e5.chunk.js",
+    "static/js/2.d6a534e5.chunk.js.map": "/static/js/2.d6a534e5.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.d420b844faf0bc657d27d6ba86c59ff9.js": "/precache-manifest.d420b844faf0bc657d27d6ba86c59ff9.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.1946669b.chunk.css.map": "/static/css/main.1946669b.chunk.css.map",
+    "static/media/App.scss": "/static/media/bg.2f221d99.png",
+    "static/media/header.scss": "/static/media/icons.4dd83e4c.png",
+    "static/media/index.scss": "/static/media/subset-CourierNewPSMT.d500e8ff.eot",
+    "static/media/about-me.scss": "/static/media/textarea-bg.d9d37316.png"
+  }
+}
